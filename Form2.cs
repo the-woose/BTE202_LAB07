@@ -47,10 +47,6 @@ namespace BTE202_LAB07
 
             if (int.TryParse(textBox1.Text, out int kull_girisi))
             {
-                //float result = operand1 + operand2;
-                //lblToplam.Text = result.ToString();
-                //MessageBox.Show(kull_girisi+" değeri bir tam sayı", "Başarılı!",
-                //    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (result == kull_girisi)
                 {
                     MessageBox.Show("Doğru Cevap!", "Tebrikler!",
