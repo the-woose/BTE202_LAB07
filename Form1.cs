@@ -12,5 +12,11 @@ namespace BTE202_LAB07
             Form2 frm_soru = new Form2();
             frm_soru.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 frm_soru = new Form3();
+            frm_soru.ShowDialog();
+        }
     }
 }
