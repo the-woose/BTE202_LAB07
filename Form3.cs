@@ -19,16 +19,43 @@ namespace BTE202_LAB07
 
         private void cmdGetlnfo_Click(object sender, EventArgs e)
         {
+            isimAnalizi();
+        }
+        private void isimAnalizi()
+        {
             string[] nameArray = txtName.Text.Split(' ');
-            var firstName = new List<string>(nameArray);
+            string adi = adiGetir(nameArray);
+            string soyadi = soyadiGetir(nameArray);
+            int adUzunlugu = karakterSay(nameArray);
+            yazdir(adi, soyadi, adUzunlugu);
+        }
+
+        private string adiGetir(string[] Array)
+        {
+            var firstName = new List<string>(Array);
             firstName.RemoveAt(firstName.Count - 1);
-            string adi = String.Join(" ", firstName.ToArray());
-            string soyadi = nameArray[nameArray.Length - 1];
-            int adUzunlugu = 0;
-            foreach (string s in nameArray) { adUzunlugu = adUzunlugu + s.Length; }
-            txtInfo.Text = "Adınız " + adi + System.Environment.NewLine
-                + "Soyadınız " + soyadi + System.Environment.NewLine
-                + "Adınızda toplamda " + adUzunlugu + " karakter bulunuyor.";
+            string adiGetir = String.Join(" ", firstName.ToArray());
+            return adiGetir;
+        }
+
+        private string soyadiGetir(string[] Array)
+        {
+            string soyadiGetir = Array[Array.Length - 1];
+            return soyadiGetir;
+        }
+
+        private int karakterSay(string[] Array)
+        {
+            int isimUzunlugu = 0;
+            foreach (string s in Array) { isimUzunlugu = isimUzunlugu + s.Length; }
+            return isimUzunlugu;
+        }
+
+        private void yazdir(string ad, string soyad, int uzunluk)
+        {
+            txtInfo.Text = "Adınız " + ad + System.Environment.NewLine
+                + "Soyadınız " + soyad + System.Environment.NewLine
+                + "Adınızda toplamda " + uzunluk + " karakter bulunuyor.";
         }
     }
 }
