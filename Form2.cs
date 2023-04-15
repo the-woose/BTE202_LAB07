@@ -38,27 +38,27 @@ namespace BTE202_LAB07
             int operand_01 = rnd_01.Next(0, 200);
             int operand_02 = rnd_02.Next(0, 200);
             result = operand_01 + operand_02;
-            label1.Text = operand_01.ToString()+" + "+operand_02.ToString()+" işleminin sonucu nedir?";
+            label1.Text = operand_01.ToString() + " + " + operand_02.ToString() + " işleminin sonucu nedir?";
             return result;
         }
 
         public void kontrol_Et()
         {
-            
+
             if (int.TryParse(textBox1.Text, out int kull_girisi))
             {
                 //float result = operand1 + operand2;
                 //lblToplam.Text = result.ToString();
                 //MessageBox.Show(kull_girisi+" değeri bir tam sayı", "Başarılı!",
                 //    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if(result == kull_girisi)
+                if (result == kull_girisi)
                 {
                     MessageBox.Show("Doğru Cevap!", "Tebrikler!",
                     MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else
                 {
-                    MessageBox.Show("Yanlış Cevap :(\nİşlemin sonucu = "+result.ToString(), "Hata!",
+                    MessageBox.Show("Yanlış Cevap :(\nİşlemin sonucu = " + result.ToString(), "Hata!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

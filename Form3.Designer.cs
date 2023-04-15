@@ -28,54 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtInfo = new TextBox();
+            cmdGetlnfo = new Button();
+            txtName = new TextBox();
+            lblName = new Label();
             SuspendLayout();
             // 
-            // label1
+            // txtInfo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(26, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            txtInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtInfo.Enabled = false;
+            txtInfo.Location = new Point(12, 61);
+            txtInfo.Multiline = true;
+            txtInfo.Name = "txtInfo";
+            txtInfo.Size = new Size(712, 141);
+            txtInfo.TabIndex = 4;
             // 
-            // textBox1
+            // cmdGetlnfo
             // 
-            textBox1.Location = new Point(200, 42);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            cmdGetlnfo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            cmdGetlnfo.Location = new Point(649, 23);
+            cmdGetlnfo.Name = "cmdGetlnfo";
+            cmdGetlnfo.Size = new Size(75, 23);
+            cmdGetlnfo.TabIndex = 5;
+            cmdGetlnfo.Text = "Bilgiyi Getir";
+            cmdGetlnfo.UseVisualStyleBackColor = true;
+            cmdGetlnfo.Click += cmdGetlnfo_Click;
             // 
-            // button1
+            // txtName
             // 
-            button1.Location = new Point(488, 78);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            txtName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtName.Location = new Point(348, 23);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(295, 23);
+            txtName.TabIndex = 6;
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Location = new Point(12, 27);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(330, 15);
+            lblName.TabIndex = 7;
+            lblName.Text = "Adınızı yazın (İsim-ler ve Soyisim aralarında boşluk bırakarak):";
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
+            ClientSize = new Size(736, 238);
+            Controls.Add(lblName);
+            Controls.Add(txtName);
+            Controls.Add(cmdGetlnfo);
+            Controls.Add(txtInfo);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form3";
-            Text = "Form3";
+            Text = "Yavuz Sava - 2210780022";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtInfo;
+        private Button cmdGetlnfo;
+        private TextBox txtName;
+        private Label lblName;
     }
 }

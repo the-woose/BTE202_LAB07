@@ -61,6 +61,7 @@
             ClientSize = new Size(360, 194);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "Yavuz Sava - 2210780022";
             ResumeLayout(false);

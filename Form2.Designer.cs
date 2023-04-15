@@ -37,7 +37,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(291, 127);
+            button1.Location = new Point(87, 127);
             button1.Name = "button1";
             button1.Size = new Size(96, 33);
             button1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(393, 127);
+            button2.Location = new Point(189, 127);
             button2.Name = "button2";
             button2.Size = new Size(96, 33);
             button2.TabIndex = 1;
@@ -60,30 +60,30 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(26, 29);
+            label1.Location = new Point(26, 31);
             label1.Name = "label1";
             label1.Size = new Size(0, 21);
             label1.TabIndex = 2;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(26, 82);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(738, 29);
+            textBox1.Size = new Size(320, 29);
             textBox1.TabIndex = 3;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(785, 187);
+            ClientSize = new Size(371, 181);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
-            MaximumSize = new Size(801, 226);
-            MinimumSize = new Size(801, 226);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form2";
             Text = "Yavuz Sava - 2210780022";
             Load += Form2_Load;
